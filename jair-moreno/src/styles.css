@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+:root {
+  --white: #FFFBF4;
+  --black: #11120D;
+  --olive: #565449;
+  --bone: #D8CFBC;
+}
