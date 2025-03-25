@@ -1,0 +1,27 @@
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Flechas de navegación */
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--olive);
+  background-color: transparent;
+  border-radius: 50%;
+  --swiper-navigation-top-offset: 40%; /* Ajusta el porcentaje según lo que necesites */
+}
+
+/* Paginadores normales */
+.swiper-pagination-bullet {
+  background-color: var(--white);
+  border: 1px solid var(--olive);
+  opacity: 1;
+}
+
+/* Paginador activo */
+.swiper-pagination-bullet-active {
+  background-color: var(--olive);
+  opacity: 1;
+}
