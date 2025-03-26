@@ -10,7 +10,7 @@
   color: var(--olive);
   background-color: transparent;
   border-radius: 50%;
-  --swiper-navigation-top-offset: 40%; /* Ajusta el porcentaje según lo que necesites */
+  --swiper-navigation-top-offset: 40%;
 }
 
 /* Paginadores normales */
