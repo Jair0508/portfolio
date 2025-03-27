@@ -1,6 +1,17 @@
 <div class="fixed top-6 flex justify-center w-full px-6 z-9">
-  <div class="w-full bg-linear-to-r from-(--white) to-(--bone) rounded-2xl px-4 py-2 flex justify-between items-center drop-shadow-lg">
-    <span class="color-(--black) font-medium text-xl">Jair Moreno</span>
-    <img src="assets/icons/menu-icon.svg" width="20px" alt="">
+  <div class="w-full bg-linear-to-r from-(--white) to-(--bone) rounded-2xl px-4 py-2 drop-shadow-lg">
+    <div class="flex justify-between items-center">
+      <span class="color-(--black) font-medium text-xl">Jair Moreno</span>
+      <img src="assets/icons/menu-icon.svg" width="20px" (click)="toggleMenu()" alt="menu icon" />
+    </div>
+    @if (isMenuOpen) {
+    <div class="flex flex-col text-center text-(--black) pt-2">
+      <p>Tecnologías</p>
+      <hr />
+      <p>Experiencia</p>
+      <hr />
+      <p>Certificaciones</p>
+    </div>
+    }
   </div>
 </div>

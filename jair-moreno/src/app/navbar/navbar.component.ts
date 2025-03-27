@@ -8,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
 
+  isMenuOpen = false;
+
+  toggleMenu(): void {
+    console.log('isMenuOpen', this.isMenuOpen);
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+
 }
