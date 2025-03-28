@@ -1,17 +1,19 @@
-<div class="fixed top-6 flex justify-center w-full px-6 z-9">
+<div class="fixed flex justify-center w-full px-6 pt-6 z-9 backdrop-blur-xs">
   <div class="w-full bg-linear-to-r from-(--white) to-(--bone) rounded-2xl px-4 py-2 drop-shadow-lg">
-    <div class="flex justify-between items-center">
-      <span class="color-(--black) font-medium text-xl">Jair Moreno</span>
+    <div class="flex justify-between items-center color-(--black)">
+      <span class=" font-medium text-xl" (click)="scrollTo('about-me')">Jair Moreno</span>
       <img src="assets/icons/menu-icon.svg" width="20px" (click)="toggleMenu()" alt="menu icon" />
     </div>
     @if (isMenuOpen) {
-    <div class="flex flex-col text-center text-(--black) pt-2">
-      <p>Tecnologías</p>
-      <hr />
-      <p>Experiencia</p>
-      <hr />
-      <p>Certificaciones</p>
-    </div>
+      <ul [@menuAnimation] class="text-center text-(--black) pt-2">
+        <li (click)="scrollTo('about-me')">Sobre mí</li>
+        <hr>
+        <li (click)="scrollTo('technologies')">Tecnologías</li>
+        <hr>
+        <li (click)="scrollTo('experience')">Experiencia</li>
+        <hr>
+        <li (click)="scrollTo('certifications')">Certificaciones</li>
+      </ul>
     }
   </div>
 </div>
