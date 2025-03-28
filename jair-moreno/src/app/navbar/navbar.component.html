@@ -1,18 +1,20 @@
 <div class="fixed flex justify-center w-full px-6 pt-6 z-9 backdrop-blur-xs">
   <div class="w-full bg-linear-to-r from-(--white) to-(--bone) rounded-2xl px-4 py-2 drop-shadow-lg">
     <div class="flex justify-between items-center color-(--black)">
-      <span class=" font-medium text-xl" (click)="scrollTo('about-me')">Jair Moreno</span>
-      <img src="assets/icons/menu-icon.svg" width="20px" (click)="toggleMenu()" alt="menu icon" />
+      <span class=" font-medium text-xl cursor-pointer" (click)="scrollTo('about-me')">Jair Moreno</span>
+      <img class="cursor-pointer" src="assets/icons/menu-icon.svg" width="20px" (click)="toggleMenu()" alt="menu icon" />
     </div>
     @if (isMenuOpen) {
       <ul [@menuAnimation] class="text-center text-(--black) pt-2">
-        <li (click)="scrollTo('about-me')">Sobre mí</li>
+        <li class="nav-item" (click)="scrollTo('about-me')">Sobre mí</li>
         <hr>
-        <li (click)="scrollTo('technologies')">Tecnologías</li>
+        <li class="nav-item" (click)="scrollTo('technologies')">Tecnologías</li>
         <hr>
-        <li (click)="scrollTo('experience')">Experiencia</li>
+        <li class="nav-item" (click)="scrollTo('experience')">Experiencia</li>
         <hr>
-        <li (click)="scrollTo('certifications')">Certificaciones</li>
+        <li class="nav-item" (click)="scrollTo('certifications')">Certificaciones</li>
+        <hr>
+        <li class="nav-item" (click)="scrollTo('contact')">Contacto</li>
       </ul>
     }
   </div>

@@ -1,0 +1,21 @@
+.nav-item {
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.1s ease, color 0.1s ease;
+}
+
+.nav-item:hover {
+  background-color: var(--olive);
+  color: var(--white);
+}
+
+.nav-item:active {
+  background-color: var(--olive);
+  color: var(--white);
+}
+
+hr {
+  color: var(--olive);
+  margin: 0 auto;
+  width: 99%;
+}
