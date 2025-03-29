@@ -31,7 +31,7 @@ export class NavbarComponent {
   scrollTo(sectionId: string): void {
     const element = document.getElementById(sectionId);
     if (element) {
-      const offset = 56;
+      const offset = 64;
       const elementPosition = element.getBoundingClientRect().top + window.pageYOffset; // Posición del componente
       const offsetPosition = elementPosition - offset;
   
